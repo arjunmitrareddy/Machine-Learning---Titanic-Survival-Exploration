@@ -12603,7 +12603,7 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">predictions_1</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -12645,7 +12645,7 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">outcomes</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
@@ -13121,7 +13121,7 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">predictions_2</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -13132,7 +13132,7 @@ Fill in the missing code below so that the function will make this prediction.<b
     <span class="n">predictions</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">passenger</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
         
-        <span class="k">if</span> <span class="p">(</span><span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;female&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">):</span> 
+        <span class="k">if</span> <span class="p">(</span><span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;female&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">):</span> 
             <span class="n">predictions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
         <span class="k">else</span><span class="p">:</span> 
             <span class="n">predictions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
@@ -13162,7 +13162,7 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">outcomes</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
@@ -13178,7 +13178,7 @@ Fill in the missing code below so that the function will make this prediction.<b
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Predictions have an accuracy of 79.24%.
+<pre>Predictions have an accuracy of 79.35%.
 </pre>
 </div>
 </div>
@@ -13192,7 +13192,7 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer</strong>: <em>79.24%</em></p>
+<p><strong>Answer</strong>: <em>79.35%</em></p>
 
 </div>
 </div>
@@ -13682,7 +13682,12 @@ Nc3AKkmSpKYZWCVJktQ0A6skSZKaZmCVJElS0wyskiRJapqBVZIkSU0zsEqSJKlp/w9j8NRX8Px2
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer</strong>: <em>82.83%</em></p>
+<p><strong>Answer</strong>: *</p>
+<h2 id="Describe-the-steps-you-took-to-implement-the-final-prediction-model-so-that-it-got-an-accuracy-of-at-least-80%.">Describe the steps you took to implement the final prediction model so that it got an accuracy of at least 80%.<a class="anchor-link" href="#Describe-the-steps-you-took-to-implement-the-final-prediction-model-so-that-it-got-an-accuracy-of-at-least-80%.">&#182;</a></h2><p>I have tried to branch out the predictions, slowly considering one by one feature. For Example, first I have started with Female Paseengers, then in those results I have tried various features in which female passengers survived. In this way I was able to check which passengers did not survive more clearly. Female passengers belonging to Pclass 3 and having age above 40 did not survive. I have tried various features this way and found more and more accurate results. I then repeated the same process for Male passengers as well.</p>
+<h2 id="What-features-did-you-look-at?-">What features did you look at? <a class="anchor-link" href="#What-features-did-you-look-at?-">&#182;</a></h2><p>Sex, Age, Pclass, Parch, SibSp</p>
+<h2 id="Were-certain-features-more-informative-than-others?">Were certain features more informative than others?<a class="anchor-link" href="#Were-certain-features-more-informative-than-others?">&#182;</a></h2><p>Yes, Some features were more informative than others. For Example, Pclass was very much informative compared to SibSp and Parch</p>
+<h2 id="Which-conditions-did-you-use-to-split-the-survival-outcomes-in-the-data?">Which conditions did you use to split the survival outcomes in the data?<a class="anchor-link" href="#Which-conditions-did-you-use-to-split-the-survival-outcomes-in-the-data?">&#182;</a></h2><p>I split the outcomes based on failure conditions. As there are many more failures compared to survivals, I have focused on more accurately predicting not survived outcomes. I first split the data based on gender. Initially it was predicted that all females survived, but on analyzing all the features one by one, I realized results could be made more accurate. So I split the data using Pclass, after splitting using Pclass I split the data usng Age and found that female passengers belonging to Pclass 3 and who were elder than 40 did not survive. I repeated this process for Parch and SibSp features as well. I also repeated the same process for male passengers.</p>
+<h2 id="How-accurate-are-your-predictions?">How accurate are your predictions?<a class="anchor-link" href="#How-accurate-are-your-predictions?">&#182;</a></h2><p>I have achieved an accuracy of 82.83% *</p>
 
 </div>
 </div>
